@@ -27,10 +27,10 @@ source venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-*2. Train (creates models/)
+2. Train (creates models/)
 python src/train.py --data data/sample.csv
 
-*3. Start the API serve
+3. Start the API serve
 uvicorn app.main:app --reload
 ## API Endpoints
 
