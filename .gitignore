@@ -1,0 +1,8 @@
+models/
+__pycache__/
+venv/
+.env
+*.pkl
+*.joblib
+.DS_Store
+
