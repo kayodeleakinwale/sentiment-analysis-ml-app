@@ -18,6 +18,7 @@ Build an end-to-end ML system — from training to inference — using clean eng
 
 
 ## Run locally
+# 1. Setup environment
 
 ```bash
 python3 -m venv venv
@@ -25,18 +26,18 @@ source venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-# train (creates models/)
+# 2. train (creates models/)
 python src/train.py --data data/sample.csv
 
-# serve
+# Start the API serve
 uvicorn app.main:app --reload
-## 🚀 API Endpoints
+## API Endpoints
 
 ### Interactive Docs
 
 FastAPI automatically generates interactive API documentation:
 
-👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+ [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ---
 
@@ -73,3 +74,12 @@ Example response:
 }
 ```
 ### Tech stack
+Python 3.12
+
+scikit-learn
+
+FastAPI
+
+Uvicorn
+
+pandas
