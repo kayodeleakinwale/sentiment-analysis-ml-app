@@ -19,7 +19,7 @@ Build an end-to-end ML system — from training to inference — using clean eng
 
 ## Run locally
 
-# 1. Setup environment
+*1. Setup environment
 
 ```bash
 python3 -m venv venv
@@ -27,10 +27,10 @@ source venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-# 2. train (creates models/)
+*2. Train (creates models/)
 python src/train.py --data data/sample.csv
 
-# Start the API serve
+*3. Start the API serve
 uvicorn app.main:app --reload
 ## API Endpoints
 
